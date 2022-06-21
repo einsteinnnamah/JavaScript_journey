@@ -1,3 +1,6 @@
+
+
+
 //numbers
 let size_in_meters = 20 //interger
 let size_in_inches = 2.1023 //floating point number
@@ -23,7 +26,7 @@ user1["profile_settings"] = {
     name: "shola", DOB: "20/22", 
 }
 
-console.log(user1)
+// console.log(user1)
 
 let user3 = {
     name: "Kenny John",
@@ -35,14 +38,30 @@ let user3 = {
 }
 delete user3["User Profile"].weight
 
-console.log(user3)
+// console.log(user3)
 
 //get all the values in an object 
 
 
-console.log(Object.values(user3))
-console.log(Object.keys(user3))
-console.log(typeof(user3.name))
+// console.log(Object.values(user3))
+// console.log(Object.keys(user3))
+// console.log(typeof(user3.name))
+
+
+//More on Objects
+//Object.create()
+let userSelection = {
+    printUserProfile: function ()  {
+        console.log(`The selected user is Mr ${this.firstName} ${this.lastName}`)
+    }
+}
+
+const selectedUser = Object.create(userSelection);
+selectedUser.firstName = "Ayodeji";
+selectedUser.lastName = `Azeez`;
+selectedUser.printUserProfile()
+
+
 
 
 //Strings
@@ -50,8 +69,7 @@ console.log(typeof(user3.name))
  let lastName = 'Azeez'
  let fullName =`Mr ${firstName} ${lastName} `
 
-
 let message = "Hello my friends\n My name is Jonhson\n I am a Software engineer"
 
 
-alert(message.includes("Software"))
+// alert(message.includes("Software"))
