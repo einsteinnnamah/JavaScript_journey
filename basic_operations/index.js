@@ -30,3 +30,15 @@ console.log(2!=1) //true
 console.log(2===1) //false
 
 
+//Assignment Operators
+let size = 10;
+// the assignment operator is used to assign a value to a variable
+//Do not confuse assignment operator with the equality operator
+
+//increment operator
+// size ++ / increases the value of size by one
+
+// Decrement operator
+// size -- / decreases the value of size by one
+
+
