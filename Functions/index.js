@@ -24,7 +24,7 @@
 // sumData()
 
 
-// //FUnctions with Parameters//
+// //Functions with Parameters//
 // /*******/
 //what is happening her is that we are calling the name of the function
 //and the parameters that we want to pass to the function
@@ -35,6 +35,13 @@
 
 // displayName("John", "Doe")
 
+
+//but now what is if we give the age and year a value 
+function diplayName (firstName, lastName, age =50, year=1995) {
+    alert(`Hello ${firstName} ${lastName} ${age} years old. You were born in ${year}`)
+}
+
+displayName("John", "Doe")
 
 //Simple and analogy functions//
 // Example 2:
@@ -49,6 +56,8 @@ function userLoginAuth (userNameSet, passwordSet) {
     } else alert(`This username is ${userNameSet} and password is also ${passwordSet}`)
 }
 
-userLoginAuth("undefined", "undefined")
+userLoginAuth()
 //wow this was great hope you understand 
-//if you don't you can always go back to the fundamentals up top
+//if you don't you can always go back to the fundamentals uptop
+
+
