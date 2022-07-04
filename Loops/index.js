@@ -25,8 +25,6 @@
 // }
 
 
-
-
 // //For of Loop //
 // const iterable = [20, 30, 40, 50, 60];
 
@@ -44,14 +42,14 @@
 
 
 //For in Loop//
-const userAuth = {
- name: "shola",
- age: 20,
- city: "Lagos"
+// const userAuth = {
+//  name: "shola",
+//  age: 20,
+//  city: "Lagos"
 
-}
+// }
 
-for (const key in userAuth) {
-    console.log(key)
-    console.log(`The key is: ${key} and the value is: ${userAuth[key]}`)
-}
+// for (const key in userAuth) {
+//     console.log(key)
+//     console.log(`The key is: ${key} and the value is: ${userAuth[key]}`)
+// }
