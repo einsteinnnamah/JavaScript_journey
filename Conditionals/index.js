@@ -50,3 +50,30 @@
 // Conditional operator (?:)
 // /********/
 // also called the ternary operator //
+//Tenary operator operates on three values //
+let age = 20
+let canVote = ( age > 20) ? true : false
+console.log(canVote)
+
+let appleStock = 200
+let totalStock = (appleStock == 10) ? true : false
+console.log(totalStock)
+
+
+
+//Switch Statement //
+//********/
+
+let day = "Friday"
+
+switch (day) {
+    case 'Monday':
+        console.log("Today is Tuesday")
+        break;
+    case 'Wenesday':
+        console.log("Happy Birthday")
+        break;
+    default:
+        console.log("invalid User")
+        
+}
