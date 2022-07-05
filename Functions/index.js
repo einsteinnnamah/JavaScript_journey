@@ -85,40 +85,59 @@
 
 //functions with return
 //In this example we want to create a function that will return the value of the sum of two numbers.
-function getFullName (firstName="Helen", lastName="john") {
-    const fullName = firstName + " " + lastName //here we are concatating(combining) the two strings
-    return fullName //this is the return statement that will return the value of the fullName
-}
+// function getFullName (firstName="Helen", lastName="john") {
+//     const fullName = firstName + " " + lastName //here we are concatating(combining) the two strings
+//     return fullName //this is the return statement that will return the value of the fullName
+// }
 
-//Note: we can also change the name of the let variable to anything we want i.e fullname1 and fullname2
-let fullName1 = getFullName("John", "Doe") //here we are calling the function and passing the values
-let fullName2 = getFullName()
-// alert(fullName1)
-// alert(fullName2)
+// //Note: we can also change the name of the let variable to anything we want i.e fullname1 and fullname2
+// let fullName1 = getFullName("John", "Doe") //here we are calling the function and passing the values
+// let fullName2 = getFullName()
+// // alert(fullName1)
+// // alert(fullName2)
 
-//Note: if we remove the return statement it will return undefined
+// //Note: if we remove the return statement it will return undefined
+// //Note: every code under the return statement will be ignored
 
-//Example 3: simple function with return
-//we want to create a function that will return the value of the sum of two numbers.
-function getSum (num1, num2) {
-    const numSum = num1 + num2
-    return numSum
-}
+// //Example 3: simple function with return
+// //we want to create a function that will return the value of the sum of two numbers.
+// function getSum (num1, num2) {
+//     const numSum = num1 + num2
+//     return numSum
+// }
 
-let sum1 = getSum(10, 20)
-// alert(sum1)
+// let sum1 = getSum(10, 20)
+// // alert(sum1)
 
 //Example 4: intermidate function with return
 //We want to create a function with return that shows if you can vote or not
 // if you have not attain that age it will show undefined
 
-function voteAuth (voteSuccessful) {
-    let age = prompt("Enter your age")
-    const agelimit = 18
-    if (age >= agelimit) {
-        return voteSuccessful
-    } else alert ("You are not old enough to vote")
-}
+// function voteAuth (voteSuccessful) {
+//     let age = prompt("Enter your age") //we created a prompt to get the age from the user
+//     const agelimit = 18                //we created a constant to store the age limit
+//     if (age >= agelimit) {             //we created a if statement to check if the age is greater than or equal to the age limit
+//         return voteSuccessful          //if the age is greater than or equal to the age limit it will return the value of voteSuccessful
+//     } else alert ("You are not old enough to vote") //if the age is not greater than or equal to the age limit it will alert the user as invalid
+// }
 
-let voteResults = voteAuth("You can vote")
-alert(voteResults)
+// let voteResults = voteAuth("You can vote") //here we are calling the function and passing the value of voteSuccessful
+// alert(voteResults)                          //here we are alerting the user the value of voteResults
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Function expressions//
+//called function expression because we are assigning a variable to a function
+// const greeting = function () {
+//     alert('hello')
+// }
+
+
+// greeting()
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
