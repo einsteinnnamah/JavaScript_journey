@@ -137,7 +137,32 @@
 
 // greeting()
 
+//e.g you can also pass a prameter to a function expression
+// const nameSet = function (firstName, lastName) {
+//     console.log(`my name is $(firstname) $(lastname)`)
+// }
+
+// nameSet("John", "Doe")
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Callback functions//
+// A callback function is a function that is called inside another function once a criteria is satisfied //
 
+function displayUser (displayType, showFullName, showUserName) {
+    if (displayType == "full") {
+        showFullName()
+    } else {
+        showUserName()
+    }
+}
 
+function showFullName () {
+    alert('Hello John Doe')
+}
+
+function showUserName () {
+    alert('Hello user1')
+}
+
+displayUser("full", showUserName, showFullName)
