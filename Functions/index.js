@@ -147,22 +147,77 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Callback functions//
-// A callback function is a function that is called inside another function once a criteria is satisfied //
+// a parameter that pass to a function in a function to be called later is called a callback function //
+// function displayUser (displayType, showFullName, showUserName) {
+//     if (displayType == "full") {
+//         showFullName()
+//     } else {
+//         showUserName()
+//     }
+// }
 
-function displayUser (displayType, showFullName, showUserName) {
-    if (displayType == "full") {
-        showFullName()
-    } else {
-        showUserName()
+// function showFullName () {
+//     alert('Hello John Doe')
+// }
+
+// function showUserName () {
+//     alert('Hello user1')
+// }
+
+// displayUser("full", showUserName, showFullName) //here we are calling the function and passing the value of displayType and showFullName and showUserName
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//arrow functions//
+//arrow functions are a shorter way to write functions
+
+function sum (a,b) {
+        result = a + b
+        return result
     }
+
+
+//let's compare this to the arrow function for a better understanding
+
+let sum = (a,b) => a + b;
+//oR
+let sum = (a,b) => {
+     a + b
 }
 
-function showFullName () {
-    alert('Hello John Doe')
-}
+//but most times you are going to use this when you are writing on line of code or on the same line of code, so you might not want to break the line of code
 
-function showUserName () {
-    alert('Hello user1')
-}
 
-displayUser("full", showUserName, showFullName)
+//Example 5: arrow functions and callback functions//
+//Let's convert this our callback function to an arrow function
+
+//using function decleration
+function displayUser (displayType, showFullName, showUserName) {
+        if (displayType == "full") {
+            showFullName()
+        } else {
+            showUserName()
+        }
+    }
+
+    //using arrow function
+
+   let  displayUser = (displayType, showFullName, showUserName) => {
+        if (displayType == "full") {
+            showFullName()
+        } else {
+            showUserName()
+        }
+    }
+
+    //Using function expressions
+  
+    const displayUser = function(displayType, showFullName, showUserName){
+        if (displayType == "full") {
+            showFullName()
+        }else {
+            showUserName()
+        }
+    }
