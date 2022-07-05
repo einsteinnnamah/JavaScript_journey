@@ -93,9 +93,32 @@ function getFullName (firstName="Helen", lastName="john") {
 //Note: we can also change the name of the let variable to anything we want i.e fullname1 and fullname2
 let fullName1 = getFullName("John", "Doe") //here we are calling the function and passing the values
 let fullName2 = getFullName()
-alert(fullName1)
-alert(fullName2)
+// alert(fullName1)
+// alert(fullName2)
 
 //Note: if we remove the return statement it will return undefined
 
+//Example 3: simple function with return
+//we want to create a function that will return the value of the sum of two numbers.
+function getSum (num1, num2) {
+    const numSum = num1 + num2
+    return numSum
+}
 
+let sum1 = getSum(10, 20)
+// alert(sum1)
+
+//Example 4: intermidate function with return
+//We want to create a function with return that shows if you can vote or not
+// if you have not attain that age it will show undefined
+
+function voteAuth (voteSuccessful) {
+    let age = prompt("Enter your age")
+    const agelimit = 18
+    if (age >= agelimit) {
+        return voteSuccessful
+    } else alert ("You are not old enough to vote")
+}
+
+let voteResults = voteAuth("You can vote")
+alert(voteResults)
