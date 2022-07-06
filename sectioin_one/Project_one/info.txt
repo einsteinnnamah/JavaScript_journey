@@ -1,0 +1,11 @@
+In this last Section, we'll consolidate all you have learnt, in a mini projects
+
+*Create a webpage that validates a user and returns user details
+    *Accept details using prompts
+    *Use an Object to store user details
+    *Validate user details
+        * USername must be less than ten
+        * Password must be greater than six
+        * User must confirms Password
+        * If username and password do not match, alert the user
+    * Display user details

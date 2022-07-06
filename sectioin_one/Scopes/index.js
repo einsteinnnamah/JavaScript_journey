@@ -19,3 +19,4 @@ alert(firstName) //Throw an error, because name is not declared in scoope
 
 //Closures//
 //A closure is a function that has access to the parent scope, even after the parent function has closed.
+// in javaScript all function are closures, because they have access to global scope
